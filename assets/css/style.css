@@ -24,6 +24,20 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #096cdd8e;
+  border-radius: 5px;
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -280,6 +294,10 @@ h6 {
   color: #45505b;
 }
 
+#hero .last-name {
+  color: #0563bb;
+}
+
 #hero p {
   color: #45505b;
   margin: 15px 0 0 0;
@@ -288,7 +306,7 @@ h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #148af9;
   letter-spacing: 1px;
 }
 
@@ -307,6 +325,20 @@ h6 {
 
 #hero .social-links a:hover {
   color: #0563bb;
+}
+
+#hero button {
+  margin-top: 20px;
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#hero button:hover {
+  background: #0678e3;
 }
 
 @media (max-width: 992px) {
@@ -376,9 +408,14 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .about-img {
+  display: flex;
+}
+
 .about img {
+  height: 220px;
   border-radius: 50%;
-  background-color: darkgray;
+  background-color: #f2f3f5;
   padding: 10px;
 }
 
@@ -388,23 +425,22 @@ section {
   color: #728394;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .content p {
+  letter-spacing: 1px;
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
+@media screen and (max-width: 576px) {
+  .about img {
+    width: 50%;
+    height: 100%;
+  }
 }
 
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #0563bb;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .about img {
+    width: 50%;
+    height: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -448,38 +484,16 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
+.skills img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
+.skills p {
+  letter-spacing: 1px;
+  font-style: italic;
 }
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -643,6 +657,9 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 
 .contact .info i {
@@ -674,11 +691,6 @@ section {
   color: #728394;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
@@ -686,81 +698,46 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+@media screen and (max-width: 767px) {
+  .contact .info {
+    flex-direction: column;
+  }
+
+  .contact .info div {
+    margin-bottom: 2rem;
+    margin-left: 20%;
+  }
+}
+
+.contact .email-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
+.contact .form-control {
+  padding: 0.375rem 2.5rem;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .email-form button[type="submit"] {
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
@@ -769,28 +746,79 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .email-form button[type="submit"]:hover {
   background: #0678e3;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.contact .form-group {
+  position: relative;
 }
 
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.contact .form-group label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 30px;
 }
 
+.contact input[type="text"]:focus + label,
+.contact input[type="email"]:focus + label,
+.contact textarea:focus + label {
+  opacity: 0;
+}
+
+.contact input[type="text"]:valid,
+.contact input[type="email"]:valid {
+  background: url("../img/check.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.contact input[type="text"]:valid + label,
+.contact input[type="email"]:valid + label,
+.contact textarea:valid + label {
+  opacity: 0;
+}
+
+.contact input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+.contact
+  input[type="email"]:invalid:not(:focus):not(:placeholder-shown)
+  + label,
+.contact textarea:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+.contact input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+.contact input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+.contact textarea:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: rgb(185, 99, 99)12, 146, 146);
+}
+
+.contact
+  input[type="text"]:invalid:not(:focus):not(:placeholder-shown)
+  ~ .requirements,
+.contact
+  input[type="email"]:invalid:not(:focus):not(:placeholder-shown)
+  ~ .requirements,
+.contact textarea:invalid:not(:focus):not(:placeholder-shown) ~ .requirements {
+  margin-top: 5px;
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+  /* border-top: 1px dashed #aaa;
+  background-color: whitesmoke; */
+}
+
+.contact .requirements {
+  padding: 0 30px 0 50px;
+  color: #c73030;
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  font-style: italic;
+  font-size: 0.8em;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
