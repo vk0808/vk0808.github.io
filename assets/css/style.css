@@ -538,7 +538,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: rgba(69, 80, 91, 0.9);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -600,16 +600,8 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #000;
   font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -618,9 +610,9 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #000;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 2rem;
   display: inline-block;
   transition: 0.3s;
 }
