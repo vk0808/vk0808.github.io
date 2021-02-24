@@ -849,6 +849,8 @@ section {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
+  color: orange;
+  font-weight: 500;
 }
 
 .portfolio-details .portfolio-info ul {
@@ -864,6 +866,20 @@ section {
 .portfolio-details .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
+  letter-spacing: 1px;
+}
+
+.portfolio-btn {
+  background: #0563bb;
+  border: 0;
+  padding: 5px 35px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.portfolio-btn a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
