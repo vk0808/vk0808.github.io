@@ -25,18 +25,17 @@ h6 {
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: none;
+  background-color: none;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #096cdd8e;
   border-radius: 5px;
 }
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -747,7 +746,7 @@ section {
 .contact input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
 .contact input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
 .contact textarea:invalid:not(:focus):not(:placeholder-shown) {
-  background-color: rgb(185, 99, 99)12, 146, 146);
+  background-color: #ffd9d9;
 }
 
 .contact
