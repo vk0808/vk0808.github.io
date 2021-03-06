@@ -1,419 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VINOD KUMAR R Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>VINOD KUMAR R Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/letter_logo.png" rel="icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/letter_logo.png" rel="icon">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-</head>
+  <body onload="Submit()">
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" class="mobile-nav-toggle d-lg-none">
+      <i class="icofont-navigation-menu"></i>
+    </button>
 
-<body onload="Submit()">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav class="nav-menu">
+        <ul>
+          <li class="active">
+            <a href="#hero"><i class="bx bxs-home"></i> <span>Home</span></a>
+          </li>
+          <li>
+            <a href="#about"><i class="bx bxs-user"></i> <span>About</span></a>
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bx bxs-book-content"></i> <span>Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bx bxs-contact"></i> <span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End Header -->
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#hero"><i class="bx bxs-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bxs-user"></i> <span>About</span></a></li>
-        <li><a href="#portfolio"><i class="bx bxs-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#contact"><i class="bx bxs-contact"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Vinod <span class="last-name">Kumar R</span></h1>
-      <p>I'm a <span class="typed" data-typed-items="Front-end, React"></span> Developer from</p>
-      <p><i class="bx bx-map"></i> Bangalore</p>
-      <div class="social-links">
-        <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
-        <a href="mailto:ravivinod21@gmail.com" class="mail"><i class="bx bx-envelope"></i></a>
-        <a href="https://linkedin.com/in/vinod-kumar-r" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/vk0808" class="github"><i class="bx bxl-github"></i></a>
-      </div>
-      <a href="assets/Vinod's Resume.pdf" target="_blank" download><button>Download Resume</button></a>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <!-- <p>Aspiring Front-end Web Developer who focuses on crafting clean and user-friendly experiences. Actively ready to join in
-          a great lively team of a good start-up to adapt me in any situation and the environment with ease and perform the best.</p> -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Vinod <span class="last-name">Kumar R</span></h1>
+        <p>
+          I'm a
+          <span class="typed" data-typed-items="Front-end, React"></span>
+          Developer from
+        </p>
+        <p><i class="bx bx-map"></i> Bangalore</p>
+        <div class="social-links">
+          <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
+          <a href="mailto:ravivinod21@gmail.com" class="mail"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="https://linkedin.com/in/vinod-kumar-r" class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/vk0808" class="github"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+        <a href="assets/Vinod's Resume.pdf" target="_blank" download
+          ><button>Download Resume</button></a
+        >
+      </div>
+    </section>
+    <!-- End Hero -->
 
-        <div class="row">
-          <div class="col-md-4 justify-content-center align-items-center about-img">
-            <img src="assets/img/vinod.jpg" class="img-fluid" alt="Vinod's Profile">
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+            <!-- <p>Aspiring Front-end Web Developer who focuses on crafting clean and user-friendly experiences. Actively ready to join in
+          a great lively team of a good start-up to adapt me in any situation and the environment with ease and perform the best.</p> -->
           </div>
-          <div class="col-md-8 text-center text-md-left pt-4 content">
-            <h3>React Developer</h3>
-            <p class="font-italic">
-              Hey, my name's Vinod Kumar R. I live in Bangalore and I'm currently building web applications and sites using React and Bootstrap frameworks. My first bit of exposure to web development was
-              in summer holidays after high school when I had joined a Computer Diplomma Course, I learned basics of HTML. I like to think that I've learned a lot since then!. Check out some of my work and 
-              feel free to shoot me an email if you'd like to work together. 
+
+          <div class="row">
+            <div
+              class="col-md-4 justify-content-center align-items-center about-img"
+            >
+              <img
+                src="assets/img/vinod.jpg"
+                class="img-fluid"
+                alt="Vinod's Profile"
+              />
+            </div>
+            <div class="col-md-8 text-center text-md-left pt-4 content">
+              <h3>React Developer</h3>
+              <p class="font-italic">
+                Hey, my name's Vinod Kumar R. I live in Bangalore and I'm
+                currently building web applications and sites using React and
+                Bootstrap frameworks. My first bit of exposure to web
+                development was in summer holidays after high school when I had
+                joined a Computer Diplomma Course, I learned basics of HTML. I
+                like to think that I've learned a lot since then!. Check out
+                some of my work and feel free to shoot me an email if you'd like
+                to work together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Proficiency</h2>
+            <p>
+              I am a creative problem solver. I build web applications. I use
+              HTML, CSS, Sass, Javascript, React, Bootstrap, Git and Github
             </p>
           </div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Proficiency</h2>
-          <p>I am a creative problem solver. I build web applications. I use HTML, CSS, Sass, Javascript, React, Bootstrap, Git and Github</p>
-        </div>
-
-        <div class="row skills-content justify-content-center">
-          <img src="./assets/img/skills/html.png">
-          <img src="./assets/img/skills/css.png">
-          <img src="./assets/img/skills/sass.png">
-          <img src="./assets/img/skills/javascript.png">
-          <img src="./assets/img/skills/react.png">
-          <img src="./assets/img/skills/git.png">
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Showcasing some of the complete functional projects, that demonstrates what I can bring to your project. I have built these projects from the ground up to demonstrate front-end skills . All these projects are responsive front-end web projects that are built so that you can view the demo version.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
+          <div class="row skills-content justify-content-center">
+            <img src="./assets/img/skills/html.png" />
+            <img src="./assets/img/skills/css.png" />
+            <img src="./assets/img/skills/sass.png" />
+            <img src="./assets/img/skills/javascript.png" />
+            <img src="./assets/img/skills/react.png" />
+            <img src="./assets/img/skills/git.png" />
           </div>
         </div>
+      </section>
+      <!-- End Skills Section -->
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>
+              Showcasing some of the complete functional projects, that
+              demonstrates what I can bring to your project. I have built these
+              projects from the ground up to demonstrate front-end skills . All
+              these projects are responsive front-end web projects that are
+              built so that you can view the demo version.
+            </p>
+          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/meme.png" class="img-fluid" alt="Random Meme Generator">
-              <div class="portfolio-info">
-                <h4>Random Meme Generator</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="./portfolio/meme-portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+          <div class="row">
+            <div
+              class="col-lg-12 d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/meme.png"
+                  class="img-fluid"
+                  alt="Random Meme Generator"
+                />
+                <div class="portfolio-info">
+                  <h4>Random Meme Generator</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-1.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="./portfolio/meme-portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/ristorante.png"
+                  class="img-fluid"
+                  alt="Ristorante Con Fusion"
+                />
+                <div class="portfolio-info">
+                  <h4>Ristorante Con Fusion</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-2.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="./portfolio/confusion-portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-3.jpg"
+                  class="img-fluid"
+                  alt="Todo List"
+                />
+                <div class="portfolio-info">
+                  <h4>Todo List</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-3.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/bookcritics.png"
+                  class="img-fluid"
+                  alt="bookCritics"
+                />
+                <div class="portfolio-info">
+                  <h4>bookCritics</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-4.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="./portfolio/book-portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-5.jpg"
+                  class="img-fluid"
+                  alt="Portfolio Template"
+                />
+                <div class="portfolio-info">
+                  <h4>Portfolio Template</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-5.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-6.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-7.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 1</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-7.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-8.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 3</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-8.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-9.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-9.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="View Pictures"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      data-gall="portfolioDetailsGallery"
+                      data-vbtype="iframe"
+                      class="venobox"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ristorante.png" class="img-fluid" alt="Ristorante Con Fusion">
-              <div class="portfolio-info">
-                <h4>Ristorante Con Fusion</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="./portfolio/confusion-portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Todo List">
-              <div class="portfolio-info">
-                <h4>Todo List</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bookcritics.png" class="img-fluid" alt="bookCritics">
-              <div class="portfolio-info">
-                <h4>bookCritics</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="./portfolio/book-portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="Portfolio Template">
-              <div class="portfolio-info">
-                <h4>Portfolio Template</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="View Pictures"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </section>
+      <!-- End Portfolio Section -->
 
-      </div>
-    </section><!-- End Portfolio Section -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+          <div class="row mt-1">
+            <div class="col-12 pr-md-5">
+              <div class="info">
+                <div class="address">
+                  <i class="icofont-google-map"></i>
+                  <h4>Location:</h4>
+                  <p>Bangalore</p>
+                </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
+                <div class="email">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>ravivinod21@gmail.com</p>
+                </div>
 
-        <div class="row mt-1">
-
-          <div class="col-12 pr-md-5">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Bangalore</p>
+                <div class="phone">
+                  <i class="icofont-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9538833634</p>
+                </div>
               </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>ravivinod21@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9538833634</p>
-              </div>
-
             </div>
 
-          </div>
-
-          <div class="col-12 mt-5 pr-5">
-            <form action="https://formspree.io/f/xzbkqoby" method="POST" role="form" class="email-form" id="email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder=" " minlength="4" required/>
-                  <label for="name">Your Name</label>
-                  <div class="requirements"> Please enter at least 4 characters</div>
+            <div class="col-12 mt-5 pr-5">
+              <form
+                action="https://formspree.io/f/xzbkqoby"
+                method="POST"
+                role="form"
+                class="email-form"
+                id="email-form"
+              >
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder=" "
+                      minlength="4"
+                      required
+                    />
+                    <label for="name">Your Name</label>
+                    <div class="requirements">
+                      Please enter at least 4 characters
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="_replyto"
+                      id="email"
+                      placeholder=" "
+                      pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                      required
+                    />
+                    <label for="email">Your Email</label>
+                    <div class="requirements">Please enter a valid email</div>
+                  </div>
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="_replyto" id="email" placeholder=" " pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required />
-                  <label for="email">Your Email</label>
-                  <div class="requirements"> Please enter a valid email</div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder=" "
+                    minlength="4"
+                    required
+                  />
+                  <label for="subject">Subject</label>
+                  <div class="requirements">
+                    Please enter at least 4 chars of subject
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder=" " minlength="4" required />
-                <label for="subject">Subject</label>
-                <div class="requirements"> Please enter at least 4 chars of subject</div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder=" " minlength="1" required></textarea>
-                <label for="message">Message</label>
-                <div class="requirements">Please write something for us</div>
-              </div>
-              <div class="text-center"><button type="submit" value="send">Send Message</button></div>
-            </form>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder=" "
+                    minlength="1"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                  <div class="requirements">Please write something for us</div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" value="send">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section><!-- End Contact Section -->
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Vinod Kumar R</h3>
-      <p>Front-end web Designer and developer</p>
-      <div class="social-links">
-        <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
-        <a href="mailto:ravivinod21@gmail.com" class="mail"><i class="bx bx-envelope"></i></a>
-        <a href="https://linkedin.com/in/vinod-kumar-r" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/vk0808" class="github"><i class="bx bxl-github"></i></a>
-      </div>
-      <div class="copyright">
-        Copyright &copy; <strong><span> Vinod Kumar R</span></strong>. All Rights Reserved
-      </div>
-      <!-- <div class="credits">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Vinod Kumar R</h3>
+        <p>Front-end web Designer and developer</p>
+        <div class="social-links">
+          <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
+          <a href="mailto:ravivinod21@gmail.com" class="mail"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="https://linkedin.com/in/vinod-kumar-r" class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/vk0808" class="github"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          Copyright &copy; <strong><span> Vinod Kumar R</span></strong
+          >. All Rights Reserved
+        </div>
+        <!-- <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div> -->
-    </div>
-  </footer><!-- End Footer -->
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    function Submit() {
-      document.getElementById("email-form").reset();
-    }
-  </script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function Submit() {
+        document.getElementById("email-form").reset();
+      }
+    </script>
+  </body>
 </html>
