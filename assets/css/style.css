@@ -500,7 +500,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.9);
+  /* background: rgba(69, 80, 91, 0.9); */
 }
 
 .portfolio .portfolio-wrap::before {
@@ -805,6 +805,7 @@ section {
 
 .portfolio-details .portfolio-info {
   padding-top: 45px;
+  letter-spacing: 1px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -834,6 +835,7 @@ section {
 .portfolio-btn {
   background: #0563bb;
   border: 0;
+  margin: 0.25rem;
   padding: 5px 35px;
   transition: 0.4s;
   border-radius: 50px;
@@ -844,9 +846,19 @@ section {
   text-decoration: none;
 }
 
+.portfolio-details-carousel img {
+  height: 500px;
+  object-fit: contain;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
+  }
+
+  .portfolio-details-carousel img {
+    height: 200px;
   }
 }
 
