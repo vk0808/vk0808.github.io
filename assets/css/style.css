@@ -845,10 +845,13 @@ section {
   text-decoration: none;
 }
 
+.portfolio-details-carousel {
+  height: 500px;
+}
+
 .portfolio-details-carousel img {
-  height: 400px;
-  object-fit: contain;
-  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-links {
